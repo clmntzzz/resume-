@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Meghana Gopal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+            background-image: url('assets/black.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white; /* Contrast with dark blurred background */
+        }
+
+        .blur-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px); /* Blur effect */
+            background-color: rgba(0, 0, 0, 0.5); /* Slight dark overlay */
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(24, 23, 23);
+            font-weight: bold;
+            opacity: 0.9;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            text-align: center;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeInSection 1s forwards 0.5s;
+        }
+
+        @keyframes fadeInSection {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+</style>
+<body>
+    <div class="blur-overlay"></div>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <h2>Get In Touch</h2>
+        <p>Email: meghana.gopal@example.com</p>
+        <p>Phone: +91 1234567890</p>
+    </section>
+</body>
+</html>
